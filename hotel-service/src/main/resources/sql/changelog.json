@@ -1,0 +1,25 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "v1-cria-tabledata",
+        "context": "version-1",
+        "author": "moyzlevi",
+        "changes": [
+          {
+            "tagDatabase": {
+              "tag": "version-1_01"
+            }
+          },
+          {
+            "sqlFile": {
+              "comment": "Cria tabelas e insere os dados",
+              "dbms": "postgresql",
+              "path": "sql/CREATE_HOTEL_RESERVA_AND_INSERT.sql"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
